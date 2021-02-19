@@ -1,0 +1,31 @@
+body{
+    background-image: linear-gradient(to left bottom, #a311d6, #006bfc, #008cf4, #009ed2, #00aaaf, #28b4ab, #44bda6, #5ec59f, #5ed3b2, #5ee0c7, #5eeedc, #5ffbf1);
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+}
+.heading{
+    background-color: #f7edfa;
+    color:blueviolet;
+    width: 100%;
+    padding: 10px;
+    font-size: 25;
+    margin: 0;
+}
+hr{
+    width: 150;
+}
+#camera,#snapshot{
+    width: 300px;
+    height: 300px;
+    border: 5px groove purple;
+}
+button{
+    font-size: 20px;
+}
+.results{
+    background-color: darkred;
+    color: #f7edfa;
+    font-size: 25;
+    margin: 10px;
+    padding: 10;
+}

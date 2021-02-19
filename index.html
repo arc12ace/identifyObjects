@@ -1,0 +1,52 @@
+<html> 
+    <head> 
+        <title> Object Recognition </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css"> 
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        
+    </head>
+    <body> 
+        <center>
+            <h1 class="btn heading"> Object Recognition </h1>
+            <h3> Model is trained on the following objects: </h3>
+            <b id="objects"> 
+            Klenex Box <hr> 
+            Plastic Knife <hr>
+            Phone <hr>
+            iPad <hr> 
+            Bowl <hr>
+            Popcorn <hr>  
+            Water Bottle <hr>
+            Remote <hr>
+            Coaster <hr>
+            Bag Clip <hr> 
+        </b>
+        <div id="camera">
+        </div>
+        <br>
+        <br>
+        <button class="btn btn-info" onclick=capture()> Capture Image </button>
+        <br>
+        <br>
+        <div id="snapshot"> 
+        </div>
+        <br>
+        <br>
+        <button class="btn btn-success" onclick=identify()> Identify Image </button>
+        <br>
+        <br>
+        <p class="results btn"> Object: <span id="objectResult"> </span> </p>
+        <br>
+        <p class="results btn"> Accuracy: <span id="objectAccuracy"> </span> </p>
+        </center>
+        <script src="main.js"> </script>
+    </body>
+</html>
